@@ -29,6 +29,7 @@ zinit light skywind3000/z.lua
 
 zinit light Aloxaf/fzf-tab
 # 在终端打开当前项目的远程仓库
+zinit ice lucid wait='0'
 zinit light paulirish/git-open
 zinit ice lucid wait='0' atload='_zsh_autosuggest_start'
 zinit light zsh-users/zsh-autosuggestions
@@ -37,6 +38,19 @@ zinit light zdharma/fast-syntax-highlighting
 #使用x对文件进行解压
 zinit ice svn lucid wait='1'
 zinit snippet OMZP::extract
+
+#mac brew 安装 nvm配置
+zinit ice lucid wait='0' if'[[ -s "/usr/local/opt/nvm/nvm.sh" ]]'
+zinit snippet /usr/local/opt/nvm/nvm.sh
+# go版本管理
+zinit ice lucid wait='0' if'[[ -s "/Users/fei/.gvm/scripts/gvm" ]]'
+zinit snippet /Users/fei/.gvm/scripts/gvm
+#jenv 控制java版本切换
+zinit ice lucid wait='0' 
+zinit snippet https://github.com/BeBester/zshrc/blob/master/jenv.sh
+# conda_setup
+zinit ice lucid wait='0' 
+zinit snippet https://github.com/BeBester/zshrc/blob/master/conda_setup.sh
 
 
 # 补全插件
