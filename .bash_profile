@@ -39,7 +39,9 @@ export PATH="/Users/fei/bin:$PATH"
 
 export PY_SITE_PACK="/usr/local/anaconda3/lib/python3.10/site-packages"
 
-# npm版本管理
-export NVM_DIR="$HOME/.nvm"
 # java版本管理
 export PATH="$HOME/.jenv/bin:$PATH"
+
+# 具有linux功能的常用命令 替换mac原生的 如sed
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
