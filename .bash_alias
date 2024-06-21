@@ -1,1 +1,3 @@
 alias vim='nvim'
+alias proxy='export http_proxy=http://127.0.0.1:8001;export https_proxy=http://127.0.0.1:8001;'
+alias unproxy='unset http_proxy; unset https_proxy'
