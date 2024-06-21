@@ -36,7 +36,9 @@ zinit light zsh-users/zsh-autosuggestions
 zinit ice lucid wait='0'
 zinit light zdharma/fast-syntax-highlighting
 #使用x对文件进行解压
-zinit ice svn lucid wait='1'
+#svn找不到trunk分支时可以使用默认的curl
+#zinit ice svn lucid wait='1'
+zinit ice lucid wait='1'
 zinit snippet OMZP::extract
 
 #mac brew 安装 nvm配置
@@ -54,11 +56,11 @@ zinit snippet https://github.com/BeBester/zshrc/blob/master/conda_setup.sh
 
 
 # 补全插件
-zinit ice as"completion" svn
+zinit ice as"completion" 
 zinit snippet OMZP::docker-compose
-zinit ice as"completion" svn
+zinit ice as"completion" 
 zinit snippet OMZP::kubectl
-zinit ice as"completion" svn
+zinit ice as"completion" 
 zinit snippet OMZP::nvm
 zinit ice as"completion"
 zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
