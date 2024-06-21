@@ -3,7 +3,8 @@ export JENV_SHELL=zsh
 export JENV_LOADED=1
 unset JAVA_HOME
 unset JDK_HOME
-source '/usr/local/Cellar/jenv/0.5.6/libexec/libexec/../completions/jenv.zsh'
+j_version=$(jenv 2>&1|sed -n '1p' |awk -F' ' '{print $2}')
+source "/usr/local/Cellar/jenv/$j_version/libexec/libexec/../completions/jenv.zsh"
 jenv rehash 2>/dev/null
 jenv refresh-plugins
 jenv() {
