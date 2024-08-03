@@ -1,8 +1,9 @@
 # 加载 powerlevel10k 主题 depth 1只clone最近一次提交 可以减少下载大小
-zinit ice depth=1; zinit light romkatv/powerlevel10k
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+zinit ice depth=1;
+zinit light romkatv/powerlevel10k
+zinit snippet 'zshrc/.p10k.zsh'
+zinit snippet 'zshrc/.bash_aliases'
+zinit snippet 'zshrc/.bash_profile'
 
 # (this is currently required for annexes)
 zinit light-mode for \
