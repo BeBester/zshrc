@@ -42,11 +42,11 @@ zinit snippet OMZP::extract
 
 
 # 补全插件
-zinit ice as"completion" svn
+zinit ice as"completion"
 zinit snippet OMZP::docker-compose
-zinit ice as"completion" svn
+zinit ice as"completion"
 zinit snippet OMZP::kubectl
-zinit ice as"completion" svn
+zinit ice as"completion"
 zinit snippet OMZP::nvm
 zinit ice as"completion"
 zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
