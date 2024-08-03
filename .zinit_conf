@@ -37,7 +37,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit ice lucid wait='0'
 zinit light zdharma/fast-syntax-highlighting
 #使用x对文件进行解压
-zinit ice svn lucid wait='1'
+zinit ice lucid wait='1'
 zinit snippet OMZP::extract
 
 
